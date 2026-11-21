@@ -1,0 +1,60 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+
+    <product>
+        <id>1</id>
+        <name>Rajwada Kundan Necklace</name>
+        <category>Necklace</category>
+        <price>4500</price>
+        <image>https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600</image>
+        <description>A statement piece inspired by royal Rajasthan.</description>
+    </product>
+
+    <product>
+        <id>2</id>
+        <name>Gulabi Kundan Earrings</name>
+        <category>Earrings</category>
+        <price>1800</price>
+        <image>https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600</image>
+        <description>Elegant earrings for your festive moments.</description>
+    </product>
+
+    <product>
+        <id>3</id>
+        <name>Meher Kundan Bangles</name>
+        <category>Bangles</category>
+        <price>3200</price>
+        <image>https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600</image>
+        <description>Traditional elegance with a royal touch.</description>
+    </product>
+
+    <product>
+        <id>4</id>
+        <name>Rajputana Maang Tikka</name>
+        <category>Maang Tikka</category>
+        <price>2500</price>
+        <image>https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600</image>
+        <description>A beautiful finishing touch for celebrations.</description>
+    </product>
+
+    <product>
+        <id>5</id>
+        <name>Chandni Kundan Necklace</name>
+        <category>Necklace</category>
+        <price>6800</price>
+        <image>https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600</image>
+        <description>Inspired by the timeless beauty of royal jewellery.</description>
+    </product>
+
+    <product>
+        <id>6</id>
+        <name>Morni Kundan Earrings</name>
+        <category>Earrings</category>
+        <price>1500</price>
+        <image>https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600</image>
+        <description>Delicate jewellery for effortless elegance.</description>
+    </product>
+
+</products>

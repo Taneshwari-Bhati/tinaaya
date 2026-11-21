@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TINAAYA | The Royal Kundan Edit</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topbar">
+        ALWAYS ROYALTY, A LOT OF LOVE ✦
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                TINAAYA
+                <span>THE KUNDAN WAY OF LIVING</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#style">Style Finder</a>
+                <a href="#story">Our Story</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#bag" class="bag-link">
+                ♡ Bag (<span id="bagCount">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="eyebrow">A ROYAL LEGACY · FROM RAJASTHAN</p>
+
+            <h1>
+                Spoil yourself<br>
+                in <i>royalty.</i>
+            </h1>
+
+            <p class="hero-description">
+                Inspired by the timeless royalty of Rajasthan,
+                TINAAYA brings you a collection of beautiful
+                Kundan jewellery, selected with love and care.
+            </p>
+
+            <a href="#collections" class="gold-btn">
+                DISCOVER THE COLLECTION →
+            </a>
+
+            <div class="hero-caption">
+                ✧ INDIAN CRAFTSMANSHIP WEAVED WITH LOVE ✧
+            </div>
+        </div>
+
+        <div class="hero-photo">
+            <img src="https://images.pexels.com/photos/33154729/pexels-photo-33154729.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                 alt="Traditional Indian jewellery">
+        </div>
+
+        <div class="hero-stamp">
+            EST. 2026
+            <span>RAJASTHAN</span>
+        </div>
+
+    </section>
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+        <p class="eyebrow">RAJASTHANI GRACE IN EVERY GAZE</p>
+
+        <h2>Not just jewellery. <i>Heritage.</i></h2>
+
+        <p>
+            TINAAYA celebrates the rich cultural heritage of Rajasthan.
+            Royalty, tradition and love come together in every piece.
+            Our jewellery is inspired by generations of craftsmanship
+            and made to become a part of your special moments.
+        </p>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+
+    <section class="category-section section">
+
+        <p class="eyebrow">EXPLORE YOUR FAVOURITES</p>
+
+        <h2>Shop by <i>Collection</i></h2>
+
+        <div class="category-grid">
+
+            <button class="category-card" data-category="Necklace">
+                <span>✧</span>
+                <h3>Rajputana Aad</h3>
+                <small>ROYAL NECKWEAR</small>
+            </button>
+
+            <button class="category-card" data-category="Earrings">
+                <span>❋</span>
+                <h3>Jhumka Diaries</h3>
+                <small>TIMELESS EARRINGS</small>
+            </button>
+
+            <button class="category-card" data-category="Bangles">
+                <span>◇</span>
+                <h3>Meenakari Stories</h3>
+                <small>TRADITIONAL BANGLES</small>
+            </button>
+
+            <button class="category-card" data-category="Maang Tikka">
+                <span>✦</span>
+                <h3>The Bridal Edit</h3>
+                <small>MAANG TIKKA</small>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- COLLECTIONS -->
+
+    <section class="collections section" id="collections">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">THE BAISA COLLECTION</p>
+                <h2>The Royal <i>Collection</i></h2>
+            </div>
+
+            <p>Find the piece that tells your story.</p>
+        </div>
+
+        <div class="filters">
+
+            <input type="text" id="searchBox"
+                   placeholder="Search your favourite jewellery...">
+
+            <select id="categoryFilter">
+                <option value="all">All Jewellery</option>
+                <option value="Necklace">Necklaces</option>
+                <option value="Earrings">Earrings</option>
+                <option value="Bangles">Bangles</option>
+                <option value="Maang Tikka">Maang Tikka</option>
+            </select>
+
+            <select id="sortFilter">
+                <option value="default">Sort By</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+            </select>
+
+        </div>
+
+        <div class="budget-box">
+            <label>
+                Your budget:
+                <b>₹<span id="budgetValue">10000</span></b>
+            </label>
+
+            <input type="range" id="budget"
+                   min="1000" max="10000" step="500" value="10000">
+        </div>
+
+        <div id="productList" class="product-grid">
+            <p class="loading">Preparing your royal collection...</p>
+        </div>
+
+    </section>
+
+    <!-- STYLE FINDER -->
+
+    <section class="style-section section" id="style">
+
+        <div class="style-photo">
+            <img src="https://images.pexels.com/photos/37485302/pexels-photo-37485302.jpeg?auto=compress&cs=tinysrgb&w=1100"
+                 alt="Traditional Indian jewellery">
+
+            <div class="photo-caption">
+                Oh, to be loved in KUNDAN ✧
+            </div>
+        </div>
+
+        <div class="style-content">
+
+            <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+
+            <h2>Find Your<br><i>Royal Style.</i></h2>
+
+            <p>
+                Tell us what you are celebrating and discover
+                jewellery that matches your special occasion.
+            </p>
+
+            <form id="styleForm">
+
+                <label for="customerName">Your name</label>
+                <input type="text" id="customerName"
+                       placeholder="What should we call you?" required>
+
+                <label for="occasion">What's the occasion?</label>
+                <select id="occasion" required>
+                    <option value="">Choose an occasion</option>
+                    <option>Wedding</option>
+                    <option>Festival</option>
+                    <option>Party</option>
+                    <option>Everyday</option>
+                </select>
+
+                <label for="styleChoice">What are you looking for?</label>
+                <select id="styleChoice" required>
+                    <option value="">Choose jewellery</option>
+                    <option value="Necklace">Aad / Necklace</option>
+                    <option value="Earrings">Jhumkas</option>
+                    <option value="Bangles">Bangles</option>
+                    <option value="Maang Tikka">Maang Tikka</option>
+                </select>
+
+                <label for="styleBudget">Your maximum budget</label>
+                <select id="styleBudget" required>
+                    <option value="">Choose your budget</option>
+                    <option value="2000">₹2,000</option>
+                    <option value="4000">₹4,000</option>
+                    <option value="7000">₹7,000</option>
+                    <option value="10000">₹10,000</option>
+                </select>
+
+                <button type="submit" class="gold-btn">
+                    REVEAL MY STYLE ✧
+                </button>
+
+            </form>
+
+            <div id="styleResult"></div>
+
+        </div>
+    </section>
+
+    <!-- OUR STORY -->
+
+    <section class="story section" id="story">
+
+        <div>
+            <p class="eyebrow">OUR LITTLE WORLD</p>
+
+            <h2>Inspired by Jaipur.<br><i>Made for you.</i></h2>
+
+            <p>
+                TINAAYA celebrates the charm of traditional
+                Indian jewellery. Inspired by Rajasthan's royal
+                heritage, our collection brings together intricate
+                Kundan designs, vibrant colours and timeless elegance.
+            </p>
+
+            <p>
+                Because some traditions are simply too beautiful
+                to ever go out of style.
+            </p>
+        </div>
+
+        <div class="story-image">
+            <img src="https://images.pexels.com/photos/33154729/pexels-photo-33154729.jpeg?auto=compress&cs=tinysrgb&w=900"
+                 alt="Traditional Kundan jewellery">
+        </div>
+
+    </section>
+
+    <!-- WISHLIST -->
+
+    <section class="wishlist section" id="wishlist">
+
+        <p class="eyebrow">SAVED WITH LOVE</p>
+        <h2>Your <i>Wishlist.</i></h2>
+
+        <div id="wishlistItems">
+            Your favourite pieces will appear here.
+        </div>
+
+    </section>
+
+    <!-- SHOPPING BAG -->
+
+    <section class="bag-section section" id="bag">
+
+        <p class="eyebrow">YOUR LITTLE TREASURE BOX</p>
+        <h2>Your Shopping <i>Bag.</i></h2>
+
+        <div id="bagItems">
+            Your bag is currently empty.
+        </div>
+
+        <h3 id="totalPrice">Total: ₹0</h3>
+
+        <button class="gold-btn" id="clearBag">
+            CLEAR BAG
+        </button>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact section" id="contact">
+
+        <div>
+            <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+
+            <h2>Let's talk <i>jewels.</i></h2>
+
+            <p>
+                Have a question or looking for something special?
+                Drop us a message.
+            </p>
+
+            <div class="contact-decoration">
+                ✧ WITH LOVE, TINAAYA ✧
+            </div>
+        </div>
+
+        <form id="contactForm">
+
+            <label for="contactName">Your name</label>
+            <input type="text" id="contactName" required>
+
+            <label for="email">Email address</label>
+            <input type="email" id="email" required>
+
+            <label for="enquiry">What is your enquiry about?</label>
+            <select id="enquiry">
+                <option>Product enquiry</option>
+                <option>Customisation</option>
+                <option>Order information</option>
+                <option>Other</option>
+            </select>
+
+            <label for="message">Your message</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit" class="gold-btn">
+                SEND YOUR MESSAGE →
+            </button>
+
+        </form>
+    </section>
+
+    <!-- PRODUCT DETAILS POPUP -->
+
+    <div id="productModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">×</button>
+
+            <img id="modalImage" src="" alt="Selected jewellery">
+
+            <div>
+                <p class="eyebrow">A TINAAYA TREASURE</p>
+                <h2 id="modalName"></h2>
+                <p id="modalDescription"></p>
+                <h3 id="modalPrice"></h3>
+
+                <button id="modalAdd" class="gold-btn">
+                    ADD TO BAG
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <h2>TINAAYA<span>.</span></h2>
+
+        <p>THE ROYAL KUNDAN EDIT</p>
+        <p>Inspired by Rajasthan. Adorned with love.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <small>© 2026 TINAAYA. A college project.</small>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
